@@ -7,7 +7,7 @@ def is_valid_string(s):
                                                        
 
     frequencies = list(freq_table.values())  # Count the frequency of each character
-    print(frequencies)
+   # print(frequencies)
     max_freq = max(frequencies) # Finding the most frequent characters
     min_freq = min(frequencies) # Finding the least frequent characters
     
