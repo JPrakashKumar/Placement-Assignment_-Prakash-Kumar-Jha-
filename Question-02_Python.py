@@ -7,16 +7,14 @@ def is_valid_string(s):
                                                        
 
     frequencies = list(freq_table.values())  # Count the frequency of each character
-
+    print(frequencies)
     max_freq = max(frequencies) # Finding the most frequent characters
     min_freq = min(frequencies) # Finding the least frequent characters
-
+    
     if max_freq == min_freq: # Checking All characters have the same frequency
         return "YES"
-    
-    elif min_freq == 1: # Checking the case after removing one character form the input string
+    elif (frequencies.count(min_freq)) > (frequencies.count(max_freq)): # Checking the string after removal of one extra character
         return "YES"
-
     else:
         return "NO"
     
