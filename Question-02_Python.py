@@ -13,7 +13,7 @@ def is_valid_string(s):
     
     if max_freq == min_freq: # Checking All characters have the same frequency
         return "YES"
-    elif (frequencies.count(min_freq)) > (frequencies.count(max_freq)): # Checking the string after removal of one extra character
+    elif (frequencies.count(min_freq)) > (frequencies.count(max_freq)): # Checking the string after removal of one extra character 
         return "YES"
     else:
         return "NO"
